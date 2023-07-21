@@ -64,15 +64,4 @@ class DeepFaceWorker:
 path1='R.jpg'
 path2='DV.jpg'
 
-'''represent('Girl.jpg', detector_backend='ssd')#"Дівчина.jpg")
-print(DeepFace.verify(path1, path2))'''
-'''
 
-image1= cv2.imread(path1)
-image2=cv2.imread(path2)
-site='https://www.goldderby.com/wp-content/uploads/2022/12/Ralph-fiennes-movies-ranked.jpg?w=620&h=360&crop=1'
-image1=DeepFaceWorker().face_encoding(image1)
-image2=DeepFaceWorker().face_encoding(image2)
-result=DeepFaceWorker().compare_faces(image1, image2, 'cosine')
-
-print(result)'''

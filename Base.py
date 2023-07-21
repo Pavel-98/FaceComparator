@@ -4,7 +4,7 @@ import shutil
 
 import FaceWorker
 import SiteWorker
-from main import Face
+
 
 faceRecognitionFolder='C:\\BaseFolder'
 baseFolder='C:\\BaseFolder'

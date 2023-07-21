@@ -11,7 +11,7 @@ import numpy as np
 np.set_printoptions(precision=2)
 
 import openface
-#https://www.imdb.com/search/name/?match_all=true&start=1501&ref_=rlm
+
 fileDir = os.path.dirname(os.path.realpath(__file__))
 modelDir = os.path.join(fileDir, '..', 'models')
 dlibModelDir = os.path.join(modelDir, 'dlib')

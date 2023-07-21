@@ -6,11 +6,11 @@ import requests
 import FaceWorker
 
 site_start="https://www.imdb.com/search/name/?match_all=true&start="
-site_end="&ref_=rlm"#https://www.imdb.com/search/name/?match_all=true&start=351&ref_=rlm
+site_end="&ref_=rlm"
 siteName='https://www.imdb.com'
 position_distance=50
 count=551
-src='*//img/@src'#'*//div[@class=\"ipc-poster ipc-poster--baseAlt ipc-poster--dynamic-width ipc-sub-grid-item ipc-sub-grid-item--span-2\"]//img/@srcset'
+src='*//img/@src'
 alt='*//img/@alt'
 div="//div[@class='lister-item mode-detail']"
 href='*//a/@href'
@@ -105,21 +105,6 @@ def existedRecord(site):
             return True
     return False
 
-
-
-
 def getBase():
     records = getRecords()
-    '''base=[]
-    i=0
-    print(len(records))
-    for record in records:
-        i+=1
-        site = gettingSite(record, i)
-        if site == None:
-            continue
-        #
-        record.site=site
-        base.append(record)'''
-
     return records
